@@ -4,5 +4,10 @@
 }
 
 :root{
-    --text-color-blue-1: #240a5e; 
+    --text-color-blue-1: rgb(36, 10, 94);
+    --text-color-white-1: rgb(245, 240, 250); 
+}
+
+body{
+    overflow: hidden;
 }

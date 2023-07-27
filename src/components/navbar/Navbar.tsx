@@ -3,10 +3,14 @@
 
 import styles from '@/components/navbar/navbar.module.css';
 import menu from '@/images/menu.png';
+import cross from '@/images/cross.png';
 
 import Image from 'next/image';
+import { useState } from 'react';
 
 const Navbar = () => {
+    const [showMenu,setShowMenu] = useState<boolean>(false);
+
     return (
         <header className={styles.header}>
             <div className={styles.nav_container}>
@@ -28,8 +32,12 @@ const Navbar = () => {
                         </li>
                     </ul>
 
-                    <Image className={`${styles.menu_icon}`} src={menu} alt="menu" />
-
+                    <Image className={`${styles.menu_icon}`} src={showMenu ? cross : menu} alt="menu" onClick={() => setShowMenu(!showMenu)} />
+                    {showMenu && (<div className={`${styles.fullscreen_menu}`}>
+                        <a onClick={() => setShowMenu(!showMenu)}>About</a>
+                        <a onClick={() => setShowMenu(!showMenu)}>Services</a>
+                        <a onClick={() => setShowMenu(!showMenu)}>Contact Us</a>
+                    </div>)}
 
                 </nav>
             </div>
