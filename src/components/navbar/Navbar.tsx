@@ -7,6 +7,7 @@ import cross from '@/images/cross.png';
 
 import Image from 'next/image';
 import { useState } from 'react';
+import Link from 'next/link';
 
 const Navbar = () => {
     const [showMenu,setShowMenu] = useState<boolean>(false);
@@ -15,9 +16,9 @@ const Navbar = () => {
         <header className={styles.header}>
             <div className={styles.nav_container}>
                 <nav>
-                    <span className={`${styles.text_logo}`}>
+                    <Link href="/" className={`${styles.text_logo}`}>
                         Youth Center Education
-                    </span>
+                    </Link>
 
 
                     <ul className={`${styles.anchors}`}>

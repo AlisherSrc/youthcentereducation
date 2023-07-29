@@ -1,0 +1,53 @@
+.contactme_section {
+  position: relative;
+  width: 70%;
+  height: 10rem;
+
+  border-radius: 0px 10px 10px 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+
+  background-color: white;
+
+  top: 70px;
+  z-index: 3;
+}
+
+.cm_container {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px;
+  height: 100%;
+  width: 90%;
+}
+
+.cm_container form {
+  display: flex;
+  flex: 1;
+
+  border-radius: 10px;
+}
+.cm_container h2 {
+  flex: 1;
+  font-size: 1.5rem;
+}
+
+.phone {
+  padding: 7%;
+  background-color: var(--text-color-white-1);
+  color: black;
+  border-radius: 5px 0px 0px 10px;
+}
+
+.submit_btn {
+  padding: 7%;
+  letter-spacing: 2px;
+  border-radius: 0px 5px 5px 0px;
+
+  background-color: var(--text-color-yellow-1);
+}

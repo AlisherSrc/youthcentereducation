@@ -25,6 +25,7 @@
   font-weight: 700;
   color: var(--text-color-blue-1);
 
+  text-decoration: none;
   cursor: pointer;
 }
 
