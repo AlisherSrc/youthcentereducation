@@ -6,11 +6,29 @@ import menu from '@/images/menu.png';
 import cross from '@/images/cross.png';
 
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Anchor from '../anchor/Anchor';
 
 const Navbar = () => {
-    const [showMenu,setShowMenu] = useState<boolean>(false);
+    const [showMenu, setShowMenu] = useState<boolean>(false);
+
+
+    const handleClickShowMenu = () => {
+        // const elem = document.querySelector(".image") as HTMLElement;
+        // if (elem) {
+        //     elem.style.animation = "scale_down 0.5s ease 0s 1 normal forwards";
+
+        // }
+        setShowMenu(!showMenu);
+    }
+
+    useEffect(() => {
+        showMenu ? document.body.classList.add('no-scroll') :
+            document.body.classList.remove('no-scroll');
+    }, [showMenu])
+
+
 
     return (
         <header className={styles.header}>
@@ -22,22 +40,22 @@ const Navbar = () => {
 
 
                     <ul className={`${styles.anchors}`}>
-                        <li onClick={() => {}}>
-                            About
+                        <li>
+                            <Anchor href='#f_1_section'>Services</Anchor>
                         </li>
                         <li>
-                            Services
-                        </li>
-                        <li>
-                            Contact Us
+                            <Anchor href='#contactus'>Contact Us</Anchor>
                         </li>
                     </ul>
 
-                    <Image className={`${styles.menu_icon}`} src={showMenu ? cross : menu} alt="menu" onClick={() => setShowMenu(!showMenu)} />
-                    {showMenu && (<div className={`${styles.fullscreen_menu}`}>
-                        <a onClick={() => setShowMenu(!showMenu)}>About</a>
-                        <a onClick={() => setShowMenu(!showMenu)}>Services</a>
-                        <a onClick={() => setShowMenu(!showMenu)}>Contact Us</a>
+                    <Image className={`${styles.menu_icon}`}
+                        src={showMenu ? cross : menu}
+                        alt="menu"
+                        onClick={handleClickShowMenu} />
+                    {showMenu && (<div
+                        className={`${styles.fullscreen_menu}`}>
+                        <a href='#f_1_section' onClick={() => setShowMenu(!showMenu)}>Services</a>
+                        <a href='#contactus' onClick={() => setShowMenu(!showMenu)}>Contact Us</a>
                     </div>)}
 
                 </nav>

@@ -37,6 +37,16 @@
   color: var(--text-color-white-2);
 
   box-shadow: var(--background-color-blue-2) 1px 10px 24px 0px;
+
+  padding: 10px;
+  
+}
+
+.card:hover{
+  animation: shadow_scale_up 0.7s ease 0s 1 normal forwards;
+}
+.card:not(:hover){
+  animation: shadow_scale_down 0.7s ease 0s 1 normal forwards;
 }
 
 .card h3 {
@@ -100,4 +110,31 @@
     gap: 5em;
     width: 80%;
   }
+}
+
+
+/* animations */
+
+@keyframes shadow_scale_up {
+  0% {
+		box-shadow: var(--background-color-blue-2) 1px 10px 24px 0px;;
+		transform: translateY(0);
+	}
+
+	100% {
+		box-shadow: var(--background-color-blue-2) 1px 12px 34px -12px;
+		transform: translateY(-2px);
+	}
+}
+
+@keyframes shadow_scale_down {
+  0% {
+		box-shadow: var(--background-color-blue-2) 1px 12px 34px -12px;
+		transform:  translateY(-2px);
+	}
+
+  100% {
+		box-shadow: var(--background-color-blue-2) 1px 10px 24px 0px;;
+		transform: translateY(0);
+	}
 }

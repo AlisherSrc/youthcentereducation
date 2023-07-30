@@ -2,7 +2,7 @@ import styles from './contactme.module.css';
 
 const ContactMe = () => {
     return (
-        <section className={`${styles.contactme_section} section`}>
+        <section className={`${styles.contactme_section} section`} id='contactus'>
             <div className={`${styles.cm_container}`}>
                 <h2>Contact Us!</h2>
                 <form>

@@ -9,7 +9,6 @@
   align-items: center;
   justify-content: flex-start;
 
-
   background-color: white;
 
   top: 70px;
@@ -50,4 +49,71 @@
   border-radius: 0px 5px 5px 0px;
 
   background-color: var(--text-color-yellow-1);
+
+  cursor: pointer;
+}
+
+.submit_btn:hover {
+  animation: bright_in 0.5s ease 0s 1 normal forwards;
+}
+
+.submit_btn:not(:hover) {
+  animation: bright_out 0.5s ease 0s 1 normal forwards;
+}
+
+.submit_btn:focus {
+  transform: scale(0.99);
+  filter: brightness(0.8);
+}
+/* responsivness */
+
+/* desktop devices */
+@media (min-width: 1281px) {
+}
+
+/* tablet devices */
+@media (min-width: 769px) {
+}
+
+/* mobile devices */
+@media (max-width: 768px) {
+  .cm_container {
+    flex-flow: column;
+    height: 70%;
+    width: 100%;
+
+    padding: 0px;
+  }
+
+  .contactme_section {
+    height: 7.5rem;
+  }
+
+  .phone {
+    width: 100%;
+  }
+
+  .submit_btn {
+    width: 40%;
+  }
+}
+
+/* animations */
+
+@keyframes bright_in {
+  0% {
+    filter: brightness(1);
+  }
+  100% {
+    filter: brightness(1.1);
+  }
+}
+
+@keyframes bright_out {
+  0% {
+    filter: brightness(1.1);
+  }
+  100% {
+    filter: brightness(1);
+  }
 }

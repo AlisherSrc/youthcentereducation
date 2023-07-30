@@ -1,8 +1,7 @@
 import styles from "./features_1.module.css";
 
 const Features_1 = () => {
-
-    return <section className={`${styles.features_1_section} section`}>
+    return <section className={`${styles.features_1_section} section`} id="f_1_section">
         <h2>Our courses</h2>
         <div className={`${styles.f_1_container}`}>
             <article className={`${styles.card}`}>

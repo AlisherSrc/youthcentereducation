@@ -64,7 +64,7 @@
     align-items: center;
     justify-content: center;
 
-    width: 30%;
+    width: 40%;
     height: 3.5rem;
 
     font-weight: 750;
@@ -79,6 +79,12 @@
     cursor: pointer;
 }
 
+.button:hover{
+  animation: bright_in 0.5s ease 0s 1 normal forwards;
+}
+.button:not(:hover){
+  animation: bright_out 0.5s ease 0s 1 normal forwards;
+}
 .right_arrow{
     width: 25px;
     height: 20px;
@@ -126,7 +132,7 @@
     }
 
     .hero_section h1{
-        font-size: 2em;
+        font-size: 1.5em;
     }
     .hero_section h2{
         font-size: 1em;
@@ -134,9 +140,30 @@
 
     .button{
         width: 50%;
-
     }
-
+    .button:active{
+      transform: scale(0.99);
+      filter: brightness(0.8);
+    }
 
   }
   
+  /* animations */
+
+@keyframes bright_in {
+  0%{
+    filter: brightness(1);
+  }
+  100%{
+    filter: brightness(1.1);
+  }
+}
+
+@keyframes bright_out {
+  0%{
+    filter: brightness(1.1);
+  }
+  100%{
+    filter: brightness(1);
+  }
+}
