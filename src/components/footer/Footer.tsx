@@ -36,7 +36,7 @@ const Footer = () => {
                     {t("address")}
                 </p>
                 <p className={`${styles.copyright}`}>
-                    {t("madeBy")} <a >AlisherSk</a>
+                    {t("madeBy")} <a href='https://www.instagram.com/a_akito_o/' target='blank'>AlisherSk</a>
                     <br />
                     {t("copyright")}
                 </p>
