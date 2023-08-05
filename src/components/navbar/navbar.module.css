@@ -1,6 +1,8 @@
 .header {
   width: auto;
   height: 76px;
+
+  border: none;
 }
 
 .nav_container {
@@ -33,8 +35,8 @@
   list-style: none;
 
   display: flex;
-  justify-content: space-between;
-  width: 25%;
+  justify-content: space-around;
+  width: 50%;
 }
 
 .anchors li {
@@ -46,7 +48,6 @@
 
 .anchors li:hover {
   filter: brightness(0.3);
-  /* filter: opacity(0.8); */
 }
 
 .menu_icon {
@@ -89,6 +90,31 @@
   filter: opacity(0.5);
 }
 
+.lang_list_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 1em;
+
+  cursor: pointer;
+}
+
+.lang_list {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  background-color: var(--background-color-white-1);
+  border-radius: 10px;
+  padding: 5px;
+  z-index: 3;
+}
+
+.lang_list li {
+  list-style: none;
+}
 /* responsivness */
 
 /* desktop devices */

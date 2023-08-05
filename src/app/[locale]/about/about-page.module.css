@@ -1,0 +1,69 @@
+.about_page {
+  display: flex;
+  flex-flow: column;
+  gap: 50px;
+  padding: 25px;
+
+  background-color: var(--background-color-white-1);
+}
+
+.subtitle {
+  font-size: 2em;
+  user-select:text;
+}
+
+.intro_block {
+  display: flex;
+  gap: 25px;
+}
+
+.logo {
+  max-width: 300px;
+  height: auto;
+}
+
+.intro_block p {
+  font-size: 1.7em;
+  user-select:text;
+}
+
+.methodology_block {
+  display: flex;
+  flex-flow: column;
+  gap: 25px;
+}
+
+.methodology_block ul {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+
+  font-size: 1.5em;
+}
+
+.methodology_block ul li,
+.methodology_block ul li b{
+    user-select:text;
+}
+
+.achievements_block {
+  display: flex;
+  flex-flow: column;
+  gap: 25px;
+}
+
+.achievements_block p {
+  font-size: 1.5em;
+  user-select:text;
+
+}
+
+/* mobile devices */
+@media (max-width: 768px) {
+    .intro_block {
+        display: flex;
+        flex-flow: column;
+
+        gap: 25px;
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "Home": {
+        "about": "About",
+        "services": "Services",
+        "contact us": "Contact Us",
+        "title": "Korean and English courses",
+        "subtitle": "We focus on the result!",
+        "CTA button": "LEARN NOW",
+        "courses": "Our courses",
+        "english": "English",
+        "genEng": "General English",
+        "ielts": "IELTS",
+        "prepToUni": "Preparation to university",
+        "unt": "UNT",
+        "korean": "Korean",
+        "genKorean": "General Korean",
+        "topik": "TOPIK",
+        "whyUs": "Why Us?",
+        "yOfExp": "years of experience",
+        "satisfCustomers": "Over 1000 satisfied customers",
+        "prices": "Acceptable prices",
+        "contact": "Contact Us!",
+        "sendBtn": "SEND",
+        "social": "Social",
+        "address": "Nursultan Nazarbayev Avenue 145/149, 37 apartment",
+        "madeBy": "Website was made by",
+        "copyright": "Copyright - All Rights Reserved."
+    },
+    "About": {
+        "intro": "Welcome to our Language Learning Center, a hub for English and Korean language enthusiasts. We cater to learners of all ages and backgrounds, offering multilevel programs tailored to meet diverse language proficiency goals.",
+        "methodology": "Our methodology: ",
+        "resOriented": "Result-Oriented: ",
+        "ro_text": "We focus on delivering tangible results, ensuring learners make noticeable progress in their language abilities.",
+        "practDriven": "Practice-Driven: ",
+        "pd_text": "We reinforce learning through abundant homework and practice materials, creating an immersive learning environment.",
+        "ContEval": "Continuous Evaluation: ",
+        "ce_text" : "Regular assessments help us monitor progress and tailor our teaching methods to individual learning styles.",
+        "achievements": "Our Achievements: ",
+        "achievements_text": "We take pride in the success of our students. Having served over 1000 satisfied learners, many have achieved their language goals, aced language exams, and secured admission to esteemed academic programs."
+    },
+    "Metadata": {
+        "title": "English and Korean courses - Youth Center Education",
+        "description": "Discover English and Korean courses in Taldykorgan. From beginner to advanced level. Reach your language goals today!",
+        "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no",
+        "keywords": "courses,English,Korean,Taldykorgan,Study",
+        "author":"AlisherSk"
+    }
+}

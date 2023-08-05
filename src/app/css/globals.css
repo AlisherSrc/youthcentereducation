@@ -4,6 +4,7 @@
   border: none;
   user-select: none;
   user-zoom: none;
+  box-sizing: border-box;
 }
 
 *:focus {
@@ -20,6 +21,7 @@
 
   --background-color-blue-1: rgba(0, 182, 194, 1);
   --background-color-blue-2: rgba(36, 10, 94, 1);
+  --background-color-white-1: rgba(224, 224, 224, 0.5);
 }
 
 body {

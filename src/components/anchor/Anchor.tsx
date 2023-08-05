@@ -19,23 +19,3 @@ const AnchorLink: React.FC<AnchorLinkProps> = ({ href, children }) => {
 };
 
 export default AnchorLink;
-
-// import React, { MouseEvent } from 'react';
-
-// interface AnchorLinkProps {
-//   children: React.ReactNode,
-//   distanceTop: number;
-// }
-
-// const Anchor: React.FC<AnchorLinkProps> = ({ children, distanceTop }) => {
-//   const scroolTo = () => {
-//     window.scrollTo({
-//         top: distanceTop,
-//         behavior: 'smooth',
-//     })
-// };
-
-//   return <a onClick={scroolTo}>{children}</a>;
-// };
-
-// export default Anchor;

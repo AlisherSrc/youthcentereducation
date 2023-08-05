@@ -5,7 +5,16 @@ import right_arrow from '@/images/right-arrow.png';
 
 import Image from 'next/image';
 
-const Hero = () => {
+interface HeroProps {
+    props: {
+        title: string,
+        subtitle: string,
+        CTAbutton: string,
+    }
+}
+
+
+const Hero = ({ props }: HeroProps) => {
     return (
         <section className={`section ${styles.hero_section}`}>
             <div className={`${styles.hero_gradient}`}>
@@ -13,17 +22,21 @@ const Hero = () => {
             </div>
             <div className={`${styles.hero_container}`}>
                 <h2>
-                    We focus on the result!
+                    {props.subtitle}
                 </h2>
                 <h1>
-                    Korean and English courses
+                    {props.title}
                 </h1>
-
-                <button className={`${styles.button}`}>
-                    <Image className={`${styles.right_arrow}`}
-                        src={right_arrow} alt='right arrow' />
-                    LEARN NOW
-                </button>
+                <a href="https://wa.me/7471367858" target='blank'>
+                    <button className={`${styles.button}`}>
+                        <Image className={`${styles.right_arrow}`}
+                            src={right_arrow} 
+                            alt='right arrow' 
+                            loading='eager'
+                            title='right arrow icon' />
+                        {props.CTAbutton}
+                    </button>
+                </a>
             </div>
         </section>
     )
