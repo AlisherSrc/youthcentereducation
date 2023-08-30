@@ -31,6 +31,8 @@ export default function RootLayout({
     <html lang={locale}>
       <head>
         <title>{tMeta("title")}</title>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4928726850682890"
+          crossOrigin="anonymous"></script>
 
         <link rel="canonical" href="https://youthcenteredu.web.app/" />
 
@@ -55,8 +57,8 @@ export default function RootLayout({
             locale: locale
           }
         } />
-          {children}
-          <Analytics />
+        {children}
+        <Analytics />
       </body>
     </html>
   )
