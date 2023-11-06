@@ -11,7 +11,7 @@ const Footer = () => {
 
 
     return (
-        <section className={`${styles.footer} section`}>
+        <section className={`${styles.footer} section`} id="contactus">
             <div className={`${styles.footer_container}`}>
                 <p>{t("social")}</p>
                 <div className={`${styles.socials}`}>
